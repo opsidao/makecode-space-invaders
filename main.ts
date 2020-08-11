@@ -8,16 +8,16 @@ sprites.onCreated(SpriteKind.Enemy, function (sprite) {
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
-        3 3 8 
+        . 3 . 
+        . 8 . 
         3 8 3 
         3 8 3 
         3 8 3 
-        3 8 3 
         8 3 3 
         8 3 3 
         8 3 3 
-        8 3 3 
-        8 3 3 
+        8 2 3 
+        . 4 . 
         `, hero, 0, -50)
     music.pewPew.play()
 })
@@ -221,7 +221,7 @@ scene.setBackgroundImage(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     `)
-game.splash("Hello!", "Welcome to Duck Invaders")
+game.splash("Welcome to", "Not-Space Invaders")
 foeTypes = [[img`
     8 . . . . . . 8 
     . 8 . . . . 8 . 
